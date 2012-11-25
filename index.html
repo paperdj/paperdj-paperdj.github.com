@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paper DJ</title>
+        <meta charset="utf-8" />
+    </head>
+    <style>
+        body {
+            background-color: #202020;
+            color: #fff;
+        }
+        .instrLed {
+            border: 1px solid white;
+            height: 30px;
+            width:  30px;
+            background-color: #444;
+        }
+    </style>
+
+    <body bgcolor="#202020">
+        <table>
+            <tr>
+                <td>
+                    <canvas id="c" style="border:1px solid #d3d3d3;"></canvas>
+                </td>
+                <td>
+                    <div class="instrLed" id="instr1"></div>
+                    <div class="instrLed" id="instr2"></div>
+                    <div class="instrLed" id="instr3"></div>
+                    <div class="instrLed" id="instr4"></div>
+                    <div class="instrLed" id="instr5"></div>
+                    <div class="instrLed" id="instr6"></div>
+                    <div class="instrLed" id="instr7"></div>
+                    <div class="instrLed" id="instr8"></div>
+                </td>
+                <td>
+                    <canvas id="cp" style="border:1px solid #d3d3d3;"></canvas>
+                </td>
+            </tr>
+        </table>
+
+        <!--video id="v" autoplay="true" loop="true"></video -->
+        <!-- input id="magnitude-threshol" type="range" min="0" max="100" onchange="gradThreshold = this.value; test();" / -->
+
+        <script src="js/buffer-loader.js"></script>
+        <script src="js/paperdj.js"></script>
+    </body>
+</html>
